@@ -5,6 +5,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import 'edit_profile_1.dart';
+
 class UserProfile extends StatefulWidget {
   const UserProfile({Key? key}) : super(key: key);
 
@@ -44,7 +46,7 @@ class _UserProfileState extends State<UserProfile> {
                         context,
                         MaterialPageRoute(
                             // ignore: prefer_const_constructors
-                            builder: (context) => EditProfile()));
+                            builder: (context) => editUserProfile()));
                   } else if (newValue == 2) {
                     Navigator.push(
                         context,

@@ -97,37 +97,12 @@ class _UserDetailPageState extends State<UserDetailPage> {
             Padding(
               padding: const EdgeInsets.only(top: 120),
               child: Center(
-                child: image != null
-                    ? Center(
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(80),
-                          child: Image.file(
-                            image!,
-                            fit: BoxFit.cover,
-                            width: 160,
-                            height: 160,
-                          ),
-                        ),
-                      )
-                    : Center(
-                        child: CircleAvatar(
-                          backgroundImage: AssetImage("assets/images/user.png"),
-                          radius: 80,
-                        ),
-                      ),
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                showModalBottomSheet(
-                    context: context, builder: ((builder) => bottomSheet()));
-              },
-              child: Padding(
-                padding: const EdgeInsets.only(top: 110, left: 110),
                 child: Center(
-                    child: Image(
-                        height: 50,
-                        image: AssetImage("assets/images/photo-camera.png"))),
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage("assets/images/Priyansh.jpg"),
+                    radius: 80,
+                  ),
+                ),
               ),
             ),
           ]),

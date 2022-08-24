@@ -26,7 +26,7 @@ class _AdvertismentState extends State<Advertisment> {
         children: [
           for (var i = 0; i < 4; i++) ...[
             SizedBox(
-              height: MediaQuery.of(context).size.width / 1.43,
+              height: MediaQuery.of(context).size.width / 1.426,
               child: Card(
                 elevation: 40,
                 child: Column(children: [
@@ -96,10 +96,8 @@ class _AdvertismentState extends State<Advertisment> {
           alignment: Alignment.bottomRight,
           child: FloatingActionButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const Add_adv()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const Add_adv()));
             },
             child: Icon(Icons.add),
           ),
